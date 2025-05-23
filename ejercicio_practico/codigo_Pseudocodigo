@@ -1,0 +1,64 @@
+-----------------------------------------------Codigo----------------------------------------------
+
+using System;
+
+namespace PracticaBasica
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // 1. Solicitar nombre
+            Console.Write("Ingrese su nombre: ");
+            string nombre = Console.ReadLine();
+
+            // 2. Solicitar edad
+            Console.Write("Ingrese su edad: ");
+            int edad = int.Parse(Console.ReadLine());
+
+            // 3. Verificar si es mayor de edad
+            if (edad >= 18)
+            {
+                Console.WriteLine($"{nombre}, eres mayor de edad.");
+            }
+            else
+            {
+                Console.WriteLine($"{nombre}, eres menor de edad.");
+            }
+
+            // 4. Imprimir números del 1 al 10 usando un bucle for
+            Console.WriteLine("\nNúmeros del 1 al 10:");
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
+
+
+----------------------------------------------Pseudocodigo----------------------------------------------
+Inicio
+
+    // 1. Solicitar nombre
+    Escribir "Ingrese su nombre: "
+    Leer nombre
+
+    // 2. Solicitar edad
+    Escribir "Ingrese su edad: "
+    Leer edad
+
+    // 3. Verificar si es mayor de edad
+    Si edad >= 18 Entonces
+        Escribir nombre + ", eres mayor de edad."
+    Sino
+        Escribir nombre + ", eres menor de edad."
+    Fin Si
+
+    // 4. Imprimir los números del 1 al 10
+    Escribir "Números del 1 al 10:"
+    Para i desde 1 hasta 10 hacer
+        Escribir i
+    Fin Para
+
+Fin
